@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="one">My Portfolio</div>
+            <div id="two"><button id="nav-btn"><a href="index.html">AboutME</a> &nbsp; &nbsp; <a
+                        href="skill.html">MySkills</a> &nbsp; &nbsp; <a href="project.html">Projects</a> &nbsp; &nbsp;
+                    <a href="Certificate.html">Certificate</a></button></div>
+            <div id="three"><a href="connect.html">Connect</a>&nbsp; &nbsp;<button onclick = "changeMode()" id = "mode"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-moon"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+                    </svg></button></div>
+        </div>
+        <div class="second">
+            <div class="main1">
+                <p>
+                <h1 id="name"><span style="color: rgb(11, 78, 11);">My Name Is Harsh Yadav</span></h1>
+                <h3 id="info">I am a coder loves to learn and explore various programming languages. I love learning new
+                    technology and frameworks and create something unique out of it.
+                    <br>
+                    <br>
+                    I have created various projects related to web development which you can check by clicking
+                    <b>HERE.</b>
+                </h3>
+                </p>
+                <br>
+                <br>
+                <div class="resume"><button><a href="Harsh Resume Python full stack.pdf">&#9729; &nbsp; DOWNLOAD
+                            RESUME</a></button></div>
+            </div>
+            <div class="main2">
+                <img class="codingimg" src="Coding image.jpg" alt="Missing image">
+            </div>
+        </div>
+
+        <div class="third">
+            <div class="box1"><a href="https://harsh-yadav2003.github.io/UberPage/"><img id="img1" src="p2.png" alt="Missing image" height="410px" width="400px"></a></div>
+            <div class="box2"><a href="https://harsh-yadav2003.github.io/Amazon-Page/"><img id="img2" src="p5.png" alt="Missing image" height="410px" width="400px"></a></div>
+            <div class="box3"><a href="https://harsh-yadav2003.github.io/Flipkart-Page/"><img id="img3" src="p4.png" alt="Missing image" height="410px" width="400px"></a></div>
+        </div>
+
+        <div class="forth">
+            <div class="box4"><a href="https://harsh-yadav2003.github.io/Bootstrap/"><img id="img4" src="p1.png" alt="Missing image" height="410px" width="400px"></a></div>
+            <div class="box5"><a href="https://harsh-yadav2003.github.io/Aws-solution/"><img id="img5" src="p3.png" alt="Missing image" height="410px" width="400px"></a></div>
+            <div class="box6"><a href="index.html"><img id="img6" src="p6.png" alt="Missing Image" height="410px" width="400px"></a></div>
+        </div>
+        <a href="#one"><div class="fifth"><h1><span style="color: white;">&#8673;</span></h1></div></a>
+    </div>
+
+    <div class="Qualification">Qualification</div>
+        <div class="box-Qf">
+            <h5>&#9734; &nbsp; &nbsp; &nbsp; &nbsp; Pursuing Graduation In Final Year</h5><br>
+            <h6> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; University:- North East Frontier Technical University(NEFTU)</h6>
+            <h6> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Course:- B.Sc - Computer science</h6>
+            <h6> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Year:- 2021 - Present</h6>
+            <br>
+            <h5>&#9734; &nbsp; &nbsp; &nbsp; &nbsp; 12th CBSE</h5><br>
+            <h6> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; School:- RBS Memorial school, Joniawas</h6>
+            <h6> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Course:- Non-Medical</h6>
+            <h6> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Year:- 2020-2021</h6>
+            <br>
+            <h5>&#9734; &nbsp; &nbsp; &nbsp; &nbsp; 10th CBSE</h5><br>
+            <h6> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; School:- MD Sr Sec School, Mumtajpur</h6>
+            <h6> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Course:- Science</h6>
+            <h6> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Year:- 2018-2019</h6>
+        </div>
+
+        <div class="contact">
+            <a href="connect.html"><span style="color: black;">Contact me!</span></a>
+        </div>
+
+    <script>
+        function changeMode() {
+            var body = document.body;
+            
+            // toggle the theme
+            body.classList.toggle("dark-theme");
+            let button = document.getElementById('mode');
+         }
+    </script>
+</body>
+
+</html>
