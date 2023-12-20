@@ -7,136 +7,127 @@
     <title>MySkills</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            width: 100%;
-        }
-
-        .container {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            width: 100%;
-        }
-
-        .header {
+        .header{
             display: flex;
             height: 70px;
-            width: 100vw;
+            width: 100%;
             background-color: rgb(240, 240, 240);
             box-shadow: 8px 8px 8px 8px rgb(181, 181, 181);
         }
 
-        #one {
-            width: 400px;
+        #one{
+            width: 600px;
             background: none;
             color: rgb(0, 132, 106);
             font-weight: 700;
             font-family: monospace;
-            font-size: 40px;
+            font-size: 38px;
             font-style: italic;
-            padding-top: 5px;
-            padding-left: 25px;
+            padding-top: 9px;
+            padding-left: 20px;
         }
 
-        #two {
-            width: 680px;
-            margin-left: 150px;
-            background: none;
-            color: rgb(0, 132, 106);
-            font-size: 24px;
-            font-weight: 500;
-            padding-top: 15px;
-            font-family: monospace;
-            font-style: normal;
+        .navbar{
+            width: 100%;
+            padding-top: 6px;
         }
 
-        #nav-btn {
-            outline: none;
-            background: none;
-            border: none;
-            font-size: 24px;
-            color: rgb(0, 132, 106);
-            cursor: pointer;
-            font-family: monospace;
-            font-style: normal;
-            cursor: pointer;
-        }
-
-        #three {
-            width: 250px;
-            margin-left: 200px;
-            background: none;
-            color: rgb(0, 132, 106);
-            font-size: 24px;
-            font-weight: 500;
-            padding-top: 15px;
-            font-family: monospace;
-            font-style: normal;
-        }
-
-        a {
-            text-decoration: none;
-            color: rgb(0, 132, 106);
-        }
-
-        .header1 {
-            height: 720px;
-            width: 1550px;
-            background-color: rgb(214, 255, 252);
-            color: black;
-            text-align: center;
-            padding-top: 100px;
-            margin-top: 25px;
-            margin-left: 25px;
-            font-size: 24px;
-            line-height: 50px;
-            border-radius: 20%;
-            border: 1px solid black;
-            padding-bottom: 100px;
-        }
-
-        button {
-            outline: 0;
-            border: none;
-            color: rgb(0, 132, 106);
-            cursor: pointer;
-        }
-
-        ul {
+        ul{
             display: flex;
-            padding-left: 300px;
         }
 
-        li {
+        li{
             list-style: none;
             background: none;
-            color: rgb(0, 132, 106);
+            color:  rgb(0, 132, 106);
             font-size: 24px;
             font-weight: 500;
-            padding-top: 15px;
             font-family: monospace;
             font-style: normal;
             padding-left: 60px;
         }
 
-        #one {
-            background: none;
-            color: rgb(0, 132, 106);
-            font-weight: 700;
-            font-family: monospace;
-            font-size: 40px;
-            font-style: italic;
-            padding-top: 5px;
-            padding-left: 25px;
+        .sv{
+            padding-right: 20px;
         }
 
+        button{
+            outline: none;
+            background: none;
+            border: none;
+            font-size: 30px;
+            color: rgb(0, 132, 106);
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(0, 132, 106);
+        }
+
+        .box{
+            width: 100%;
+            height: 500px;
+            background-color: black;
+            border: 2px dotted black;
+            padding-top: 20px;
+            border-radius: 40px;
+            margin-top: 40px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        #mys{
+            font-size: 65px;
+            text-align: center;
+            opacity: 0.8;
+            position: absolute;
+        }
+        #tech{
+            font-size: 30px;
+            padding-top: 150px;
+            opacity: 0.8;
+            margin-left: -150px;
+        }
+        #pds{
+            display: inline;
+            border: 1px dashed black;
+            font-size: 25px;
+            margin-left: -150px;
+            opacity: 0.8;
+            color: rgb(0, 132, 106);
+        }
+        #fr{
+            margin-left: -150px;
+            opacity: 0.8;
+            font-size: 30px;
+        }
+        #hcjb{
+            display: inline;
+            font-size: 25px;
+            color: rgb(0, 132, 106);
+            margin-left: -150px;
+            opacity: 0.8;
+            border: 1px dashed black;
+        }
+        video{
+            position: relative;
+            width: 50%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-left: -650px;
+        }
+        .box1{
+            
+            margin-left: 700px;
+            margin-top: -550px;
+        }
         .dark-theme {
             color: white;
             background-color: rgb(26, 20, 20);
         }
+
     </style>
 
 </head>
@@ -145,33 +136,30 @@
     <div class="container">
         <div class="header">
             <div class="col3" id="one">My Portfolio</div>
-            <ul>
-                <li class="am"><a href="index.html">AboutMe</a></li>
-                <li class="ms"><a href="skill.html">Myskill</a></li>
-                <li class="pp"><a href="project.html">Project</a></li>
-                <li class="cf"><a href="Certificate.html">Certificate</a></li>
-                <li class="ct"><a href="connect.html">Connect</a></li>
-                <li class="sv"><button onclick="changeMode()" id="mode"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
-                            <path
-                                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
-                        </svg></button>
-                </li>
-            </ul>
+            <div class="navbar">
+                <ul>
+                    <li class="am"><a href="index.html">AboutMe</a></li>
+                    <li class="ms"><a href="skill.html">Myskill</a></li>
+                    <li class="pp"><a href="project.html">Project</a></li>
+                    <li class="cf"><a href="Certificate.html">Certificate</a></li>
+                    <li class="ct"><a href="connect.html">Connect</a></li>
+                    <li class="sv"><button onclick = "changeMode()" id = "mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                      </svg></button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="div" id="secdiv" onclick="seconddiv()">
-            <div class="header1"><span style="color: rgb(0, 132, 106);">
-                    <h1><span style="font-size: 80px;">My Skills</span></h1>
-                    <br>
-                    <h2><span style="color: rgb(0, 132, 106);"><span
-                                style="font-size: 45px;">Technologies:</span></span></h2>
-                    <h3><span style="word-spacing: 15px;"><span style="color: black;">Python, JavaScript,
-                                MySQL</span></span></h3>
-                    <br>
-                    <h2><span style="color: rgb(0, 132, 106);"><span style="font-size: 45px;">Web
-                                Development</span></span></h2>
-                    <h3><span style="word-spacing: 15px;"><span style="color: black;">HTML, CSS, Bootstarp</span></span>
-                    </h3>
+        
+        <div class="box"><video controls autoplay loop preload="auto">
+            <source src="WhatsApp Video 2023-12-20 at 12.21.58_79350dc1.mp4" type="video/mp4">
+        </video>
+            <div class="box1">
+                <h1 id="mys"><span style="color: red;"><span style="font-size: 100px;">M</span><span style="color: white;">Y</span>&nbsp;<span style="color: red;"><span style="font-size: 100px;">S</span></span><span style="color: white;">KILLS</span></h1>
+                <h2 id="tech"><span style="font-size: 70px;"><span style="color: white;">T</span></span><span style="color: white;">ECHN</span><span style="color: rgb(255, 181, 97);">OLOGY</span></h2>
+                <h3 id="pds">&nbsp; Python, Django, SQL &nbsp;</h3>
+                <h1 id="fr"><span style="font-size: 70px;"><span style="color: white;">F</span></span><span style="color: white;">RONT</span><span style="color: rgb(255, 181, 97);">END</span></h1>
+                <h3 id="hcjb">HTML, CSS, Javascript, Bootstrap</h3>
             </div>
         </div>
     </div>
@@ -186,7 +174,7 @@
          }
 
          function Seconddiv() {
-            let res = document.getElementById('secdiv').innerHTML = " <a href='skill.html'>skill</a> "
+            let res = document.getElementById('secdiv').innerHTML = " <a href='connect.html'>connect</a> "
         }
     </script>
 </body>
